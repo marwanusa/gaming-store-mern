@@ -1,14 +1,18 @@
 import React from "react";
+import GridContainer from "../components/defaults/GridContainer";
+import SideBar from "../components/nav/Sidebar";
 
 const RootLayout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="grid grid-cols-12 h-screen">
-      <div className="col-span-2 bg-red-200">sidebar</div>
-      <div className="col-span-10 bg-blue-200">
-        the rest of the app
-        {children}
-      </div>
-    </div>
+    <main className="h-screen">
+      <GridContainer cols={12}>
+      <SideBar/>
+        <div className="col-span-10 bg-blue-200">
+          the rest of the app
+          {children}
+        </div>
+      </GridContainer>
+    </main>
   );
 };
 

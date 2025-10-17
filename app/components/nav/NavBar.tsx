@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import { Search, Bell, Settings, HelpCircle } from "lucide-react";
+import Image from "next/image";
 const NavBar = () => {
   return (
-    <div>NavBar</div>
-  )
-}
+    <nav className="w-full bg-teal-500">
+      navbar
+    </nav>
+  );
+};
 
-export default NavBar
+export default NavBar;
