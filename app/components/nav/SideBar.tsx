@@ -34,8 +34,8 @@ const SideBar = () => {
     },
   ];
   return (
-    <div className="col-span-2 ">
-      <div className="py-5 px-10 gap-3 h-screen flex flex-col bg-black/30 items-start">
+    <div className="col-span-2">
+      <div className="py-5 px-10 gap-3 h-screen sticky inset-0  flex flex-col bg-black/30 items-start">
         <Logo />
         {NAV_LINKS.map((navlink, idx) => (
           <NavLink key={idx} {...navlink} />

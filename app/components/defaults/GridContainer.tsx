@@ -23,7 +23,7 @@ const GridContainer = ({
     11: " grid-cols-11",
     12: " grid-cols-12",
   }[cols];
-  return <div className={`grid ${className} ${gridCols}`}>{children}</div>;
+  return <div className={`grid ${className ? className : ""} ${gridCols}`}>{children}</div>;
 };
 
 export default GridContainer;
